@@ -1,0 +1,25 @@
+This template is a file.
+
+Variables added by the params dict
+  'default_parm5':    {{ default_parm5 if default_parm5 is defined }}
+  'default_parm6':    {{ default_parm6 if default_parm6 is defined }}
+  'group_parm1':      {{ group_parm1 if group_parm1 is defined }}
+  'group_parm2':      {{ group_parm2 if group_parm2 is defined }}
+  'host_parm31':      {{ host_parm31 if host_parm31 is defined }}
+  'host_parm32':      {{ host_parm32 if host_parm32 is defined }}
+  'host_parm41':      {{ host_parm41 if host_parm41 is defined }}
+  'host_parm42':      {{ host_parm42 if host_parm42 is defined }}
+
+Variables added from the 'Task' object
+  'task_name':   {{ task_name }}   
+  'task_host':   {{ task_host }}  
+
+task.host is actually a nested dict:
+  'task_host.name':     {{ task_host.name }}
+  'task_host.groups':   {{ task_host.groups }}
+  'task_host.data':     {{ task_host.extended_data() }}
+  'task_host.hostname': {{ task_host.hostname }}
+  'task_host.port':     {{ task_host.port }}
+  'task_host.username': {{ task_host.username }}
+  'task_host.password': {{ task_host.password }}
+  'task_host.platform': {{ task_host.platform }}

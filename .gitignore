@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+/venv/
+.DS_Store
+.idea
+.coverage
+.vscode
+.env
+inventory/*
+
